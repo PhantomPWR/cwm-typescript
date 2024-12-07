@@ -5,6 +5,9 @@ html {
 body {
 	padding-inline: 1em;
 }
+li {
+	line-height: 1.6;
+}
 dt {
 	font-weight: bold;
 }
