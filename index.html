@@ -3,9 +3,54 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/global.css" />
 		<title>cwm-typescript</title>
 	</head>
 	<body>
 		<h1>Typescript</h1>
+		<h2>Getting Started</h2>
+		<dt>Install Typescript</dt>
+		<dd>
+			<code>npm i -g typescript</code>
+		</dd>
+		<dt>Confirm Installation</dt>
+		<dd>
+			<code>tsc -v</code>
+		</dd>
+		<dt>Create Configuration File</dt>
+		<dd>
+			<code>tsc --init</code>
+		</dd>
+		<dt>Compile Typescript</dt>
+		<dd>
+			<code>tsc filename.ts</code>
+			<p>
+				<strong>NOTE:</strong>
+				If <code>rootDir</code> is set in tsconfig.json,
+				<em>only</em> run <code>tsc</code>.
+			</p>
+		</dd>
+		<dt>Debugging</dt>
+		<dd>
+			To debug Typescript in the browser, set <code>sourceMap</code> to
+			<code>true</code> in tsconfig.json.
+		</dd>
+		<ol>
+			<li>Open a <code>.ts</code> file and add a breakpoint</li>
+			<li>Click on <em>"Run and Debug"</em></li>
+			<li>Click on <em>"create launch.json file"</em></li>
+			<li>From the dropdown, select <em>"Node.js"</em></li>
+			<li>
+				Under <em>"configurations"</em>, add
+				<code>"preLaunchTask": "tsc: build - tsconfig.json"</code>
+			</li>
+		</ol>
+
+		<h2>Types</h2>
+		<img src="images/types.png" alt="types" />
+		<p>Typescript automatically assigns types to variables, e.g:</p>
+		<code>let sales: number = 123_456_789;</code>
+		<p>can be written as</p>
+		<code>let sales = 123_456_789;</code>
 	</body>
 </html>

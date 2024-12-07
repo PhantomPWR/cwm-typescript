@@ -1,0 +1,25 @@
+html {
+	font-size: 16px;
+	font-family: sans-serif;
+}
+body {
+	padding-inline: 1em;
+}
+dt {
+	font-weight: bold;
+}
+dt:not(:first-of-type) {
+	margin-top: 1.6em;
+}
+dd {
+	margin-inline-start: 0;
+	margin-block: 0.5em;
+}
+code {
+	font-family: 'Fira Code', monospace;
+	font-size: 1em;
+	color: #f92672;
+	background-color: #f9f2f4;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+}
